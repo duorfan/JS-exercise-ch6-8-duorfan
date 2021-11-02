@@ -5,18 +5,13 @@ console.log(`Its lowercase value is ${word.toLowerCase()}`);
 console.log(`Its uppercase value is ${word.toUpperCase()}`);
 
 let vowelCount = 0;
-
 [...word].forEach(letter => {
   const lowerLetter = letter.toLowerCase();
   if (
-    lowerLetter === "a" ||
-    lowerLetter === "e" ||
-    lowerLetter === "i" ||
-    lowerLetter === "o" ||
-    lowerLetter === "u" ||
-    lowerLetter === "y"
+    lowerLetter === "a" ||lowerLetter === "e" ||lowerLetter === "i" ||lowerLetter === "o" ||lowerLetter === "u" ||lowerLetter === "y"
   ) {
     vowelCount++;
   }
+ });
 
-  console.log(`It has ${vowelCount} vowels`);
+  console.log(`Wow, it has ${vowelCount} vowels`);
